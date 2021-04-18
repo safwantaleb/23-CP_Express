@@ -16,7 +16,7 @@ app.set("view engine", "html");
 app.set("views", __dirname + "/views");
 
 app.get("/", (req, res) => {
-  if (hour >= "08:00" && hour <= "17:00") {
+  if (hour >= "09:00" && hour <= "17:00") {
     if (jour != "Sunday" && jour != "Saturday") {
       res.render("home");
     } else res.render("closed");
@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/our-services", (req, res) => {
-  if (hour >= "08:00" && hour <= "17:00") {
+  if (hour >= "09:00" && hour <= "17:00") {
     if (jour != "Sunday" && jour != "Saturday") {
       res.render("our-services");
     } else res.render("closed");
@@ -32,7 +32,7 @@ app.get("/our-services", (req, res) => {
 });
 
 app.get("/contact-us", (req, res) => {
-  if (hour >= "08:00" && hour <= "17:00") {
+  if (hour >= "09:00" && hour <= "17:00") {
     if (jour != "Sunday" && jour != "Saturday") {
       res.render("contact-us");
     } else res.render("closed");
