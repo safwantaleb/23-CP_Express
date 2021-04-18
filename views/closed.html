@@ -6,10 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Office Closed</title>
     <link rel="stylesheet" href="css/closed.css" />
+    <script>
+      function startTime() {
+        var today = new Date();
+        // var h = today.getHours();
+        // var m = today.getMinutes();
+        // var s = today.getSeconds();
+        // var d = today.getDay("dddd");
+        // m = checkTime(m);
+        // s = checkTime(s);
+
+        document.getElementById("txt").innerHTML = today;
+        // d + h + ":" + m + ":" + s;
+        // var t = setTimeout(startTime, 500);
+      }
+      // function checkTime(i) {
+      //   if (i < 10) {
+      //     i = "0" + i;
+      //   } // add zero in front of numbers < 10
+      //   return i;
+      // }
+    </script>
   </head>
-  <body>
+  <body onload="startTime()">
     <div class="closed-container">
       <img src="images/closed.jpg" alt="icon" />
+    </div>
+    <div>
+      <div
+        style="color: rgb(208, 255, 0); font-size: xx-large; text-align: center"
+        id="txt"
+      ></div>
+      <div style="color: rgb(208, 255, 0); font-size: xx-large; text-align: center">
+        <p>We can serve YOU on Monday to Friday,  from 9 to 17. </p>
+      </div>
     </div>
   </body>
 </html>
